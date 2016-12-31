@@ -28,6 +28,7 @@ vendor-deps: deps
 
 bin: 	self
 	@GOPATH=$(GOPATH) go build -o bin/speak cmd/speak.go
+	@GOPATH=$(GOPATH) go build -o bin/read cmd/read.go
 
 fmt:
 	go fmt *.go
